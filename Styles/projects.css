@@ -1,0 +1,254 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Cabin";
+    font-size: 16px;
+}
+.orange {
+    color: orange;
+}
+.blue {
+    color: rgb(0, 59, 187);
+}
+.yellow {
+    color: yellow;
+}
+.flex {
+    display: flex;
+}
+
+/* Header */
+
+.navHeader {
+    background-color: rgb(8, 8, 8);
+    padding: .5em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 6%;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 1.2em;  
+    letter-spacing: 1px;
+    padding-bottom: 1em;
+    z-index: 2;
+}
+.ulNav {
+    padding-left: 0;
+    margin-top: 1em;
+}
+.ulNav li {
+    display: inline-block;
+    list-style-type: none;
+    margin-left: 2em;
+}
+.ulNav li:first-child {
+    margin-left: 0em;
+}
+.ulNav li a {
+    position: relative;
+    color: white; 
+    border: none;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.ulNav li a:hover {
+    color: rgb(0, 55, 173);
+}
+.ulNav li a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background: rgb(0, 55, 173);
+    transform: scale(0, 1);
+    transition: transform .3s ease;
+}
+.ulNav li a:hover::after {
+    transform: scale(1, 1);
+}
+header {
+    color: white;
+    background-image: linear-gradient(230deg, rgb(8, 8, 8) 50%, rgb(0, 6, 19));
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.header {
+    font-size: 1.3em;
+}
+.headerContent {
+    margin: 0 2em 0 2em;
+    max-width: 50%;
+}
+.headerContent p {
+    margin-bottom: 5em;
+}
+.headerContent h2 {
+    padding-left: 5em;
+    margin-bottom: 1em;
+    color: rgb(0, 59, 187);
+    transition: .5s;
+}
+.headerContent h2:hover {
+    padding-left: 6.5em;
+}
+.headerContent a {
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 80%;
+    color: rgb(0, 59, 187);
+    padding: 35px 15px 35px 15px;
+    border: solid rgb(0, 59, 187) 4px;
+    border-radius: 50%;
+    transition: .5s;
+}
+.headerContent a:hover {
+    color: white;
+    background-color: rgb(0, 59, 187);
+}
+
+/* Projetos */
+
+.projects {
+    color: white;
+    background-image: linear-gradient(240deg, rgb(8, 8, 8), rgb(32, 32, 32) 80%);
+    text-align: center;
+    padding-top: 3em;
+}
+.tittleProject {
+    color: rgb(0, 59, 187);
+    font-size: 1.8em;
+    margin-bottom: 3em;
+    margin-top: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3em;
+}
+.project:nth-child(odd) {
+    margin-right: 50%;
+    text-align: left;
+}
+.project:nth-child(odd) .contentProject {
+    margin-left: 1.5em;
+}
+.project:nth-child(even) {
+    margin-left: 50%;
+    text-align: right;
+    flex-direction: row-reverse;
+}
+.project:nth-child(even) img {
+    justify-content: right;
+    align-items: right;
+}
+.project:nth-child(even) .contentProject {
+    margin-right: 1.5em;
+}
+.gif {
+    width: 310px;
+    height: 180px;
+}
+.technologyUsed {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+.tecDiv {
+    margin-top: .5em;
+}
+.ulTec {
+    list-style: none;
+    font-size: 2em;
+    margin-bottom: .5em;
+}
+.liTec {
+    margin-left: .5em;
+}
+.informations {
+    margin-bottom: 2em;
+}
+.btn a {
+    text-decoration: none;
+    position: relative;
+    border: none;
+    border: solid rgb(0, 59, 187) 1px;
+    padding: .5em 1.8em .5em 1.8em;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: .3s;
+}
+.siteBtn {
+    margin-right: 5em;
+    color: rgb(32, 32, 32);
+    background-color: rgb(0, 59, 187);
+    border-radius: 10px;
+}
+.siteBtn:hover {
+    color: white;
+}
+.codBtn {
+    color: white;
+    z-index: 1;
+}
+.codBtn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(0, 59, 187);
+    transition: transform .5s ease-in-out;
+    transform: scaleX(0);
+    transform-origin: left;
+    z-index: -1;
+}
+.codBtn:hover::before {
+    transform: scaleX(1);
+    z-index: -1;
+}
+.divBackToTop {
+    padding-bottom: 1em;
+}
+.divBackToTop a{
+    font-size: 1.3em;
+    color: white;
+    text-decoration: none;
+    padding-bottom: 1em
+}
+
+/* Footer */ 
+
+.footer {
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #0A0C10;
+    text-align: center;
+    padding: 1em 0 1em 0;
+}
+.ulFooter {
+    list-style: none;
+    font-size: 2em;
+}
+.liFooter {
+    margin-left: 1em;
+}

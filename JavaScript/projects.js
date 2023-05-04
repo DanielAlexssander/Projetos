@@ -51,7 +51,7 @@
             urlGif: "Images/cursowebfundamentos.gif",
             nameProject: "CURSO WEB FUNDAMENTOS",
             liTec: HTML + CSS + JavaScript,
-            informations: `O Curso WEB FUNDAMENTOS foi um dos meu primeiros projetos com HTML5, CSS3 e JavaScript`,
+            informations: `O Curso WEB FUNDAMENTOS foi um dos meu primeiros projetos com HTML5, CSS3 e JavaScript.`,
             urlSite: "https://danielalexssander.github.io/CursoWebFundamentos/",
             urlCod: "https://github.com/DanielAlexssander/CursoWebFundamentos/",
         },

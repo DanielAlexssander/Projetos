@@ -140,7 +140,6 @@ header {
 }
 .project {
     display: flex;
-    align-items: center;
     margin-bottom: 3em;
 }
 .logo {
@@ -276,4 +275,32 @@ header {
 }
 .thisCodBtn:hover {
     background-color: rgb(0, 59, 187);
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 1700px) {
+    .headerContent {
+        max-width: 60%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .headerContent {
+        max-width: 70%;
+    }
+    .project {
+        margin-bottom: 6em;
+    }
+}
+@media screen and (max-width: 900px) {
+    .project {
+        margin-bottom: 7em;
+    }
+}
+@media screen and (max-width: 750px) {
+    .project {
+        width: 100vw;
+        margin-bottom: 8em;
+    }
 }

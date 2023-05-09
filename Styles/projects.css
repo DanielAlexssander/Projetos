@@ -361,9 +361,6 @@ header {
     }
 }
 @media screen and (max-width: 600px) {
-    body {
-        width: 600px;
-    }
     .headerContent {
         max-width: 90%;
     }

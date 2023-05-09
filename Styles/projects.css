@@ -304,7 +304,26 @@ header {
 }
 @media screen and (max-width: 750px) {
     .project {
-        width: 100vw;
+        justify-content: center;
+        align-items: center;
         margin-bottom: 8em;
+    }
+    .project:nth-child(odd) {
+        margin-left: 25%;
+        margin-right: 0;
+    }
+    .project:nth-child(even) {
+        margin-left: 25%;
+        margin-right: 0;
+    }
+}
+@media screen and (max-width: 600px) {
+    .project:nth-child(odd) {
+        margin-left: 25%;
+        margin-right: 0;
+    }
+    .project:nth-child(even) {
+        margin-left: 25%;
+        margin-right: 0;
     }
 }

@@ -93,3 +93,15 @@
 
 
 })()
+
+const navBtn = document.querySelector(".navBtn")
+const ulNav = document.querySelector(".ulNav")
+
+function ClickButtonNav() {
+    ulNav.classList.toggle('block')
+    if (ulNav.classList.value === 'ulNav block') {
+        navBtn.innerHTML = `<i class="fa-solid fa-xmark"></i>`
+    } else {
+        navBtn.innerHTML = `<i class="fa-solid fa-bars"></i>`
+    }
+}

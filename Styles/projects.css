@@ -10,6 +10,7 @@ html {
 body {
     font-family: "Cabin";
     font-size: 16px;
+    position: absolute;
 }
 .orange {
     color: orange;
@@ -303,6 +304,9 @@ header {
     }
 }
 @media screen and (max-width: 750px) {
+    .headerContent {
+        max-width: 80%;
+    }
     .project {
         justify-content: center;
         align-items: center;
@@ -318,6 +322,9 @@ header {
     }
 }
 @media screen and (max-width: 600px) {
+    .headerContent {
+        max-width: 90%;
+    }
     .project:nth-child(odd) {
         margin-left: 25%;
         margin-right: 0;

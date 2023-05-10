@@ -89,14 +89,11 @@
         `).join("")
 
     sectionProjects.innerHTML = html
-
-
-
 })()
+
 
 const navBtn = document.querySelector(".navBtn")
 const ulNav = document.querySelector(".ulNav")
-
 function ClickButtonNav() {
     ulNav.classList.toggle('block')
     if (ulNav.classList.value === 'ulNav block') {
@@ -105,3 +102,56 @@ function ClickButtonNav() {
         navBtn.innerHTML = `<i class="fa-solid fa-bars"></i>`
     }
 }
+
+
+const logo = document.querySelectorAll(".logo")
+const contentProject = document.querySelectorAll(".contentProject")
+const headerContentName = document.querySelectorAll(".headerContentName")
+const headerContentP = document.querySelectorAll(".headerContent p")
+const navHeader = document.querySelectorAll(".ulNav")
+const projectsBtn = document.getElementsByClassName("projectsBtn")
+window.sr = ScrollReveal({ reset: false, mobile: true, desktop: true});
+
+sr.reveal(navHeader, {
+    mobile: false,
+    delay: 100,
+    duration: 1500,
+    origin: 'bottom',
+    distance: '30px'
+})
+
+sr.reveal(headerContentName, {
+    viewFactor: 0.2,
+    delay: 100,
+    duration: 1500,
+    origin: 'left',
+    distance: '100px'
+})
+
+sr.reveal(headerContentP, {
+    viewFactor: 0.2,
+    delay: 1000,
+    duration: 1500,
+    origin: 'right',
+    distance: '100px'
+})
+
+sr.reveal(projectsBtn, {
+    delay: 1500,
+    duration: 2500
+})
+
+sr.reveal(logo, {
+    viewFactor: 0.2,
+    delay: 200,
+    duration: 1500,
+    rotate: {x: 0, y: 180, z: 1}
+})
+
+sr.reveal(contentProject, {
+    viewFactor: 0.2,
+    delay: 200,
+    duration: 1500,
+    origin: 'bottom',
+    distance: '100px'
+})

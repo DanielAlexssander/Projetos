@@ -129,11 +129,21 @@ sr.reveal(headerContentName, {
 })
 
 sr.reveal(headerContentP, {
+    mobile: false,
     viewFactor: 0.2,
     delay: 1000,
     duration: 1500,
     origin: 'right',
     distance: '100px'
+})
+sr.reveal(headerContentP, {
+    desktop: false,
+    mobile: true,
+    viewFactor: 0.2,
+    delay: 1000,
+    duration: 1500,
+    origin: 'right',
+    distance: '20px'
 })
 
 sr.reveal(projectsBtn, {
@@ -142,14 +152,14 @@ sr.reveal(projectsBtn, {
 })
 
 sr.reveal(logo, {
-    viewFactor: 0.2,
+    viewFactor: 0,
     delay: 200,
     duration: 1500,
     rotate: {x: 0, y: 180, z: 1}
 })
 
 sr.reveal(contentProject, {
-    viewFactor: 0.2,
+    viewFactor: 0,
     delay: 200,
     duration: 1500,
     origin: 'bottom',
